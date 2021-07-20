@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background: rgb(3, 13, 43);
+        height: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .rocket img {
+        width: 100px;
+        height: 100px;
+      }
+      .container .rocket::after {
+        content: '';
+        width: 10px;
+        height: 150px;
+        background: linear-gradient(rgb(40, 158 194), transparent);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="rocket">
+        <img src="./img/rocket.png" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
